@@ -1,0 +1,47 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Beneath"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "sink",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"property",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "along",
+							"type": "Text"
+						}
+					],
+					[
+						"value",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "missing",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

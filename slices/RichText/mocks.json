@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"rich_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ex proident proident ipsum non consectetur enim. Tempor tempor et amet. Excepteur eu do amet exercitation aute nisi exercitation consectetur duis pariatur."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

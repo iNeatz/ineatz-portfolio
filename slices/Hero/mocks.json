@@ -1,0 +1,114 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"designation": {
+				"__TYPE__": "FieldContent",
+				"value": "particularly",
+				"type": "Text"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Watch"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Elit sit tempor nisi qui ad. Est et aute commodo consectetur proident ex aliquip exercitation commodo adipisicing et."
+						}
+					}
+				]
+			},
+			"resume_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"id": "mock_Media_link",
+					"kind": "image/jpeg",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"__TYPE__": "FileLink"
+				}
+			},
+			"experience": {
+				"__TYPE__": "FieldContent",
+				"value": "85",
+				"type": "Number"
+			},
+			"projects": {
+				"__TYPE__": "FieldContent",
+				"value": "62",
+				"type": "Number"
+			},
+			"technologies": {
+				"__TYPE__": "FieldContent",
+				"value": "22",
+				"type": "Number"
+			},
+			"commits": {
+				"__TYPE__": "FieldContent",
+				"value": "25",
+				"type": "Number"
+			},
+			"photo": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+					"width": 2747,
+					"height": 4120
+				},
+				"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+				"width": 2747,
+				"height": 4120,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"social_icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "instagram",
+							"type": "Select"
+						}
+					],
+					[
+						"social_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,71 @@
+{
+  "id": "skills",
+  "type": "SharedSlice",
+  "name": "Skills",
+  "description": "Skills",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        },
+        "skill": {
+          "type": "Select",
+          "config": {
+            "label": "Skill",
+            "placeholder": "",
+            "options": [
+              "nextjs",
+              "reactjs",
+              "cSharp",
+              "python",
+              "php",
+              "reactNative",
+              "django",
+              "html",
+              "css",
+              "javascript",
+              "java",
+              "kotlin",
+              "tailwindCss",
+              "nodejs",
+              "mongodb",
+              "typescript",
+              "git",
+              "flutter",
+              "sass"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

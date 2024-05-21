@@ -1,0 +1,112 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "designation": {
+          "type": "Text",
+          "config": {
+            "label": "Designation",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,em"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "resume_link": {
+          "type": "Link",
+          "config": {
+            "label": "Resume Link",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "experience": {
+          "type": "Number",
+          "config": {
+            "label": "Experience",
+            "placeholder": ""
+          }
+        },
+        "projects": {
+          "type": "Number",
+          "config": {
+            "label": "Projects",
+            "placeholder": ""
+          }
+        },
+        "technologies": {
+          "type": "Number",
+          "config": {
+            "label": "Technologies",
+            "placeholder": ""
+          }
+        },
+        "commits": {
+          "type": "Number",
+          "config": {
+            "label": "Commits",
+            "placeholder": ""
+          }
+        },
+        "photo": {
+          "type": "Image",
+          "config": {
+            "label": "Photo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "social_icon": {
+          "type": "Select",
+          "config": {
+            "label": "Social Icon",
+            "placeholder": "",
+            "options": [
+              "github",
+              "linkedin",
+              "facebook",
+              "instagram",
+              "youtube",
+              "twitter"
+            ]
+          }
+        },
+        "social_link": {
+          "type": "Link",
+          "config": {
+            "label": "Social Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

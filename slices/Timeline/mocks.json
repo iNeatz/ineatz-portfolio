@@ -1,0 +1,60 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "river",
+				"type": "Text"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Oldest"
+						}
+					}
+				]
+			},
+			"timeline_id": {
+				"__TYPE__": "FieldContent",
+				"value": "earlier",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"time_frame",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "possible",
+							"type": "Text"
+						}
+					],
+					[
+						"program",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "how",
+							"type": "Text"
+						}
+					],
+					[
+						"institution",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "television",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

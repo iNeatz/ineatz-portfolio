@@ -1,0 +1,64 @@
+{
+  "id": "experience",
+  "type": "SharedSlice",
+  "name": "Timeline",
+  "description": "Experience",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "timeline_id": {
+          "type": "Text",
+          "config": {
+            "label": "Timeline Id",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "time_frame": {
+          "type": "Text",
+          "config": {
+            "label": "Time Frame",
+            "placeholder": ""
+          }
+        },
+        "program": {
+          "type": "Text",
+          "config": {
+            "label": "Program",
+            "placeholder": ""
+          }
+        },
+        "institution": {
+          "type": "Text",
+          "config": {
+            "label": "Institution",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}
