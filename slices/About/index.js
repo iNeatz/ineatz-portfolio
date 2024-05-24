@@ -27,12 +27,12 @@ const About = ({ slice }) => {
             {slice.primary.description}
           </p>
 
-          <ScrollArea className="h-[400px] mt-10">
+          <ScrollArea className="mt-10 h-[400px]">
             <ul className="mx-auto grid max-w-[620px] grid-cols-1 gap-y-6 xl:mx-0 xl:grid-cols-2">
               {slice.items.map((info) => (
                 <li
                   key={info.property}
-                  className="flex items-center justify-center gap-4 xl:justify-start"
+                  className="flex flex-col items-center justify-center gap-4 md:flex-row xl:justify-start"
                 >
                   <span className="text-white/60">{info.property}</span>
                   <span className="text-xl">{info.value}</span>

@@ -32,6 +32,14 @@
             "label": "Button Text",
             "placeholder": ""
           }
+        },
+        "svg_image": {
+          "type": "Image",
+          "config": {
+            "label": "SVG Image",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {

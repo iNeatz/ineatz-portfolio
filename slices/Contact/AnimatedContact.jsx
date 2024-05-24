@@ -2,19 +2,7 @@
 
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { useForm } from "@formspree/react";
+import { PrismicNextImage } from "@prismicio/next";
 
 const infoIcons = {
   phone: <FaPhoneAlt />,
@@ -23,71 +11,6 @@ const infoIcons = {
 };
 
 const AnimatedContact = ({ slice }) => {
-  const ContactForm = () => {
-    const [state, handleSubmit, reset] = useForm("mrgnvaad");
-
-    if (state.submitting) {
-      return <p>Submitting...</p>;
-    }
-
-    if(state.errors) {
-      return <p>Submit Failed!</p>
-    }
-
-    if (state.succeeded) {
-      return (
-        <div>
-          <p>Thanks for joining!</p>
-          <button onClick={reset}>Reset</button>
-        </div>
-      );
-    }
-
-    return (
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col gap-6 rounded-xl bg-[#27272c] p-10"
-      >
-        <h3 className="text-4xl text-accent">{slice.primary.title}</h3>
-        <p className="text-white/60">{slice.primary.description}</p>
-
-        {/* input */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <Input type="firstname" placeholder="First Name" id="fname" />
-          <Input type="lastname" placeholder="Last Name" id="lname" />
-          <Input type="email" placeholder="Email Address" id="email" />
-          <Input type="phone" placeholder="Phone Number" id="phone" />
-        </div>
-
-        {/* select */}
-        <Select>
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="Select a service" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectLabel>Select a service</SelectLabel>
-              <SelectItem value="web">Web Development</SelectItem>
-              <SelectItem value="app">App Development</SelectItem>
-              <SelectItem value="uiux">UI/UX Design</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-
-        {/* textarea */}
-        <Textarea
-          className="h-[200px]"
-          placeholder="Type your message here."
-          id="message"
-        />
-
-        {/* btn */}
-        <Button size="md" className="max-w-40" disabled={state.submitting}>
-          {slice.primary.button_text}
-        </Button>
-      </form>
-    );
-  };
   return (
     <motion.section
       initial={{
@@ -107,7 +30,7 @@ const AnimatedContact = ({ slice }) => {
         <div className="flex flex-col gap-[30px] xl:flex-row">
           {/* form */}
           <div className="order-2 xl:order-none xl:w-[54%]">
-            <ContactForm />
+            <PrismicNextImage field={slice.primary.svg_image} priority />
           </div>
 
           {/* info */}
@@ -120,9 +43,9 @@ const AnimatedContact = ({ slice }) => {
                       {infoIcons[info.info_icon]}
                     </div>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 overflow-x-hidden">
                     <p className="text-white/60">{info.info_title}</p>
-                    <h3 className="text-xl">{info.info_value}</h3>
+                    <h3 className=" text-md md:text-xl">{info.info_value}</h3>
                   </div>
                 </li>
               ))}
