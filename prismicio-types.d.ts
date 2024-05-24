@@ -73,6 +73,7 @@ export type HeaderDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | WorksSlice
   | AboutSlice
   | SkillsSlice
   | ExperienceSlice
@@ -664,6 +665,110 @@ type SkillsSliceVariation = SkillsSliceDefault;
  */
 export type SkillsSlice = prismic.SharedSlice<"skills", SkillsSliceVariation>;
 
+/**
+ * Primary content in *Works → Items*
+ */
+export interface WorksSliceDefaultItem {
+  /**
+   * Image field in *Works → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Title field in *Works → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Description field in *Works → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
+   * Skills Used field in *Works → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].skills_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  skills_used: prismic.KeyTextField;
+
+  /**
+   * Github Link field in *Works → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].github_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  github_link: prismic.LinkField;
+
+  /**
+   * Live Site Link field in *Works → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].live_site_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  live_site_link: prismic.LinkField;
+
+  /**
+   * Category field in *Works → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: works.items[].category
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  category: prismic.SelectField<
+    "Frontend" | "Backend" | "App Development" | "UI/UX Design" | "Fullstack"
+  >;
+}
+
+/**
+ * Default variation for Works Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorksSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<WorksSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Works*
+ */
+type WorksSliceVariation = WorksSliceDefault;
+
+/**
+ * Works Shared Slice
+ *
+ * - **API ID**: `works`
+ * - **Description**: Works
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorksSlice = prismic.SharedSlice<"works", WorksSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -709,6 +814,10 @@ declare module "@prismicio/client" {
       SkillsSliceDefaultItem,
       SkillsSliceVariation,
       SkillsSliceDefault,
+      WorksSlice,
+      WorksSliceDefaultItem,
+      WorksSliceVariation,
+      WorksSliceDefault,
     };
   }
 }

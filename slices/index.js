@@ -9,4 +9,5 @@ export const components = {
   rich_text: dynamic(() => import("./RichText")),
   services: dynamic(() => import("./Services")),
   skills: dynamic(() => import("./Skills")),
+  works: dynamic(() => import("./Works")),
 };

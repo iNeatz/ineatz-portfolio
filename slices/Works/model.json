@@ -1,0 +1,78 @@
+{
+  "id": "works",
+  "type": "SharedSlice",
+  "name": "Works",
+  "description": "Works",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        },
+        "skills_used": {
+          "type": "Text",
+          "config": {
+            "label": "Skills Used",
+            "placeholder": ""
+          }
+        },
+        "github_link": {
+          "type": "Link",
+          "config": {
+            "label": "Github Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "live_site_link": {
+          "type": "Link",
+          "config": {
+            "label": "Live Site Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "category": {
+          "type": "Select",
+          "config": {
+            "label": "Category",
+            "placeholder": "",
+            "options": [
+              "Frontend",
+              "Backend",
+              "App Development",
+              "UI/UX Design",
+              "Fullstack"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
