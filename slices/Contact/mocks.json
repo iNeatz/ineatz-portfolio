@@ -1,0 +1,54 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "mind",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "design",
+				"type": "Text"
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "percent",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"info_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "atom",
+							"type": "Text"
+						}
+					],
+					[
+						"info_value",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "clothing",
+							"type": "Text"
+						}
+					],
+					[
+						"info_icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "map",
+							"type": "Select"
+						}
+					]
+				]
+			}
+		]
+	}
+]
