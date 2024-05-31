@@ -12,7 +12,7 @@ const AnimatedHero = ({ slice }) => {
   const stats = [
     {
       num: slice.primary.experience,
-      text: "Years of experience",
+      text: "Years of Learning",
     },
     {
       num: slice.primary.projects,
