@@ -746,6 +746,15 @@ export interface SkillsSliceDefaultItem {
     | "git"
     | "flutter"
     | "sass"
+    | "mysql"
+    | "graphQl"
+    | "laravel"
+    | "unity"
+    | "unreal"
+    | "godot"
+    | "redux"
+    | "jquery"
+    | "express"
   >;
 }
 

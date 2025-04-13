@@ -61,7 +61,16 @@
               "typescript",
               "git",
               "flutter",
-              "sass"
+              "sass",
+              "mysql",
+              "graphQl",
+              "laravel",
+              "unity",
+              "unreal",
+              "godot",
+              "redux",
+              "jquery",
+              "express"
             ]
           }
         }

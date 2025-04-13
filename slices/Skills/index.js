@@ -3,22 +3,29 @@ import {
   SiCsharp,
   SiCss3,
   SiDjango,
+  SiExpress,
   SiFlutter,
   SiGit,
+  SiGodotengine,
   SiHtml5,
   SiJavascript,
+  SiJquery,
   SiKotlin,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
   SiPython,
   SiReact,
+  SiRedux,
   SiTailwindcss,
   SiTypescript,
+  SiUnrealengine,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaJava, FaSass } from "react-icons/fa6";
+import { FaJava, FaLaravel, FaSass, FaUnity } from "react-icons/fa6";
+import { GrGraphQl } from "react-icons/gr";
 import { PrismicRichText } from "@prismicio/react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
@@ -36,12 +43,14 @@ import {
 const skillList = {
   nextjs: <SiNextdotjs />,
   reactjs: <SiReact />,
+  redux: <SiRedux />,
   cSharp: <SiCsharp />,
   python: <SiPython />,
   php: <SiPhp />,
   reactNative: <TbBrandReactNative />,
   django: <SiDjango />,
   html: <SiHtml5 />,
+  jquery: <SiJquery />,
   css: <SiCss3 />,
   javascript: <SiJavascript />,
   java: <FaJava />,
@@ -53,6 +62,13 @@ const skillList = {
   git: <SiGit />,
   flutter: <SiFlutter />,
   sass: <FaSass />,
+  mysql: <SiMysql />,
+  laravel: <FaLaravel />,
+  unity: <FaUnity />,
+  unreal: <SiUnrealengine />,
+  godot: <SiGodotengine />,
+  express: <SiExpress />,
+  graphQl: <GrGraphQl />,
 };
 
 const Skills = ({ slice }) => {

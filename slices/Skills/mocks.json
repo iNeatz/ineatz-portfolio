@@ -28,7 +28,7 @@
 						"skill",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "reactNative",
+							"value": "kotlin",
 							"type": "Select"
 						}
 					],
